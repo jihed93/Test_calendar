@@ -25,6 +25,3 @@ Route::get('/', function () {
             $user_adress = $user->adress;
         return view('welcome', ['adress' => $adress , 'user_adress' => $user_adress] );
 });
-
-//Route::get('/', 'CalendarController@getUserAdress');
-//Route::get('/', App\Http\Controllers\CalendarController::class, 'getAdress');
